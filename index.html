@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Bar</title>
+    <!-- Inclua o Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <style>
+     body {
+    background-image: url('img13.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Faz com que o fundo fique fixo ao rolar */
+    
+}
+
+        /* Estilo da imagem de fundo */
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Estilo do logo */
+        .logo {
+            width: 20%; /* Ajuste a largura conforme necessário */
+            margin-left: -10%;
+        }
+
+        @media (max-width: 1264px) {
+            .logo {
+                margin-bottom: -0,5%;
+                width: 25%; /* Ajuste a largura conforme necessário */
+                margin-left: -4%; /* Ajusta a posição do logo para a esquerda em telas menores */
+            }
+        }
+
+
+        
+        @media (max-width: 991px) {
+            .logo {
+                margin-bottom: -5%;
+                width: 50%; /* Ajuste a largura conforme necessário */
+                margin-left: 28%; /* Ajusta a posição do logo para a esquerda em telas menores */
+            }
+        }
+
+
+        @media (max-width: 400px) {
+            .logo {
+                margin-bottom: -6%;
+                width: 65%; /* Ajuste a largura conforme necessário */
+                margin-left: 28%; /* Ajusta a posição do logo para a esquerda em telas menores */
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////NAVBAR////////////////////////////////////////////*/
+
+
+     
+        /* Estilo do ícone do menu "hamburger" */
+        .navbar-toggler-icon {
+    margin-top: -120%;
+    width: 40px; /* Ajuste a largura conforme necessário */
+    height: 40px; /* Ajuste a altura conforme necessário */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ícone personalizado */
+}
+
+
+
+        .navbar {
+        
+            background-color: #0a0018; /* Cor de fundo da navbar */
+            border-bottom: 4px solid #fff; /* Linha branca abaixo da navbar */
+        }
+
+        .navbar-brand, .nav-link {
+            white-space: nowrap;
+            
+            font-size: 110%;
+            color: #cfcfcf; /* Cor do texto */
+            transition: color 0.3s; /* Transição suave da cor em 0.3 segundos */
+            font-family: 'Hecativas-Bold'; /* Aplica a fonte Hecativas-Bold */
+        }
+
+        .nav-link:hover {
+            color: #5947fd; /* Cor do texto ao passar o mouse */
+        }
+
+
+        @font-face {
+    font-family: 'Hecativas-Bold';
+    src: url('fonts/Helixa-Light.otf') format('truetype'); /* Caminho para o arquivo da fonte */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+ /* Media Query para telas menores que 768px */
+ @media (max-width: 991px) {
+            .nav-bar {
+                width: auto;
+                height: 10%;
+            }
+        }
+
+        /* Media Query para telas menores que 768px */
+        @media (max-width: 843px) {
+            .nav-link {
+                padding: 10px 0; /* Adiciona um padding vertical */
+                width: 10%; /* Faz os links ocuparem toda a largura disponível */
+            }
+        }
+
+        /* Media Query para telas maiores que 768px */
+        @media (min-width: 843px) {
+            .nav-link {
+                padding: 0 15px; /* Ajusta o padding para espaçar os links horizontalmente */
+            }
+        }
+/*//////////////////////////////////NAVBAR////////////////////////////////////////////*/
+
+
+        
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////PESSOAS////////////////////////////////////////////*/
+.pessoas {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    width: 35%; /* Ajuste a largura conforme necessário */
+    transition: all 0.3s ease; /* Suaviza as transições de posição e tamanho */
+}
+
+@media (max-width: 990px) {
+    .pessoas {
+        margin-top: 100px; /* Ajusta a margem superior */
+        margin-bottom: 10px; /* Ajusta a margem inferior */
+        width: 45%; /* Ajuste a largura conforme necessário */
+        transform: translateX(-20%); /* Move para a esquerda, se necessário */
+    }
+}
+
+@media (max-width: 843px) {
+    .pessoas {
+        margin-top: 650px; /* Ajusta a margem superior */
+        margin-bottom: 10px; /* Ajusta a margem inferior */
+        width: 50%; /* Ajuste a largura conforme necessário */
+        transform: translateX(-25%); /* Move para a esquerda, se necessário */
+    }
+}
+
+@media (max-width: 500px) {
+    .pessoas {
+        position: absolute; /* Mantém a posição fixa em relação ao contêiner pai */
+        top: 190px; /* Posição fixa verticalmente */
+        left: 75%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta para centralizar */
+        margin-bottom: 10px; /* Margem inferior */
+        width: 50%; /* Ajuste a largura conforme necessário */
+    }
+}
+/*//////////////////////////////////PESSOAS////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////BOTÃO////////////////////////////////////////////*/
+
+    
+        .meu-botao {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transition: filter 0.3s ease; /* Transição suave para o filtro */
+    padding: 15px 39px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda padrão */
+    border-radius: 35px; /* Cantos arredondados */
+    cursor: pointer;
+    z-index: 100;
+    background: linear-gradient(45deg, #6f00ff, #130827); /* Gradiente do roxo ao quase preto */
+    color: white; /* Cor do texto */
+}
+
+.meu-botao:hover {
+    filter: brightness(0.7); /* Escurece a cor ao passar o mouse */
+}
+
+
+
+
+
+
+
+@media (max-width:990px) {
+            .meu-botao {
+                margin-bottom: -6%;
+                margin-top: -18%;
+                width: 20%; /* Ajuste a largura conforme necessário */
+                margin-left: 1%; /* Ajusta a posição do logo para a esquerda em telas menores */
+            }
+
+
+
+
+
+        }
+
+        @media (max-width:843px) {
+            .meu-botao {
+                margin-bottom: -6%;
+                margin-top: -15%;
+                width: 30%; /* Ajuste a largura conforme necessário */
+                margin-left: 28%; /* Ajusta a posição do logo para a esquerda em telas menores */
+            }
+
+
+
+        }
+    
+        @media (max-width:500px) {
+            .meu-botao {
+                margin-bottom: -6%;
+                margin-top: -5%;
+                width: 50%; /* Ajuste a largura conforme necessário */
+                margin-left: 17%; /* Ajusta a posição do logo para a esquerda em telas menores */
+            }
+
+
+
+
+
+        }
+
+/*//////////////////////////////////BOTÃO////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////FRASE////////////////////////////////////////////*/
+
+
+.frase {
+   
+    font-size: 0.9rem; /* Tamanho da fonte */
+    color: #dddddd; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    position: absolute;
+    left: 2%;
+    top: 105%;
+    margin-left: 5%;
+    
+}
+
+
+
+        @media (max-width: 843px) {
+    .frase {
+        width: 30%; /* Ajuste a largura conforme necessário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding-top: 810px; /* Adiciona um espaço acima */
+        transform: translateX(-250px); /* Move o elemento para a direita em telas menores */
+        padding-bottom: 25px; /* Adiciona um espaço abaixo */
+        position: relative; /* Pode mudar para fixed se preferir fixar em um ponto */
+    }
+}
+
+
+@media (max-width:500px) {
+    .frase {
+        width: 40%; /* Ajuste a largura conforme necessário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding-top: 820px; /* Adiciona um espaço acima */
+        transform: translateX(-110px); /* Move o elemento para a direita em telas menores */
+        padding-bottom: 25px; /* Adiciona um espaço abaixo */
+        font-size: 0.6rem;
+        position: relative; /* Pode mudar para fixed se preferir fixar em um ponto */
+    }
+}
+
+
+
+
+@media (max-width:344px) {
+    .frase {
+        width: 40%; /* Ajuste a largura conforme necessário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding-top: 870px; /* Adiciona um espaço acima */
+        transform: translateX(-135px); /* Move o elemento para a direita em telas menores */
+        padding-bottom: 25px; /* Adiciona um espaço abaixo */
+        font-size: 10px;
+        position: relative; /* Pode mudar para fixed se preferir fixar em um ponto */
+    }
+}
+
+/*//////////////////////////////////FRASE////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body><nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INÍCIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">AGENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img src="pessoas.png" class="pessoas">
+    
+
+
+
+    <button class="meu-botao btn btn-success">Ouça Agora</button>
+
+
+
+
+
+    <div class="container mt-5">
+        <div class="text-center frase">
+            Ministério Sence comunica uma mensagem de renovação espiritual, autenticidade na fé cristã e a promessa de eternidade com Deus. 
+            Convida as pessoas a voltarem à essência do evangelho, aceitando Jesus Cristo como Salvador e único caminho para a vida eterna.
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Inclua o Bootstrap JS e dependências (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+</html>
